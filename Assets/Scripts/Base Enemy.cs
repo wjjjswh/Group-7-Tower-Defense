@@ -22,6 +22,7 @@ public class BaseEnemy : MonoBehaviour
         if (Health <= 0)
         {
             Destroy(gameObject);
+            gameManager.AddScore(10);
         }
 
         // Checkpoint logic
